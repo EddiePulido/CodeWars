@@ -24,4 +24,4 @@
       if(arr[i] !== arr[j--]) return false
   
   return true
-};   
+};    
