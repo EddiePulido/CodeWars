@@ -1,0 +1,1 @@
+const oddOrEven = (arr) => arr.reduce((a,i) => a + i, 0) % 2 === 0 ? 'even' : 'odd'
