@@ -7,3 +7,4 @@ function nbDig(n, d) {
   
   return square.reduce((acc, c) => acc + countDig(c.toString()), 0)
 }
+  
