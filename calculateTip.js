@@ -15,3 +15,4 @@ function calculateTip(amount, rating) {
       default:
         return 'Rating not recognised'
   }
+}
