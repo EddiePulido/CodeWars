@@ -6,4 +6,4 @@ const banana = () => b2 + a2 + n2 + a2 + n2 + a2
 
 const answer1 = () => "no"
 const answer2 = () => "no"
-const answer3 = () => "yes"
+const answer3 = () => "yes" 
