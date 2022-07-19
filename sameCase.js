@@ -1,7 +1,7 @@
 function sameCase(a, b){
   const alpha = 'abcdefghijklmnopqrstuvwxyz'
   const isLetter = c => alpha.includes(c.toLowerCase())
-  const lower = c => alpha.includes(c)
+  const lower = c => alpha.includes(c) 
   const upper = c => alpha.toUpperCase().includes(c)
   
   if(!isLetter(a) || !isLetter(b)) return -1
