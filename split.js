@@ -6,4 +6,4 @@ var splitInParts = function(s, partLength){
   
   
   return result.join(' ') 
-} 
+}
