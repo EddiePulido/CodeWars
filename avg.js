@@ -1,0 +1,1 @@
+const average = s => Math.round(s.reduce((acc, c) => acc + c, 0) / s.length)
