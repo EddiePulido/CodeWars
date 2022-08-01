@@ -4,4 +4,4 @@ function colourAssociation(array){
     obj[a[0]] = a[1]
     return obj
   })
-}
+} 
