@@ -6,4 +6,4 @@ function removeDuplicateWords (s) {
   })
                       
   return result.join(' ')
-}
+} 
