@@ -5,3 +5,5 @@ function switcheroo(x){
     return c
   }).join('')
 }
+
+console.log(switcheroo('ab')) // 'ba'
