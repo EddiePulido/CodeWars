@@ -1,0 +1,1 @@
+const makeString = s => s.split(' ').map(c => c[0]).join('')
