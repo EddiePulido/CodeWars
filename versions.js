@@ -9,5 +9,5 @@ function compareVersions (version1, version2) {
     if(v1[i] > v2[i]) return true
     if(!v1[i] && v1[i] != 0) return false
   }
-  return true
+  return true 
 }
