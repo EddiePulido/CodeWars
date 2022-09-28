@@ -4,5 +4,5 @@ function solve(arr) {
     total *= (new Set(a)).size
     console.log(total) 
   }
-  return total
+  return total 
 };
