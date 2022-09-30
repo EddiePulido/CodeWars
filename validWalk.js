@@ -7,4 +7,4 @@ function isValidWalk(walk) {
   let south = walk.filter(e => e === 's').length
   
   return west === east && north === south
-}
+} 
