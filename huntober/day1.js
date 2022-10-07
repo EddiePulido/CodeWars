@@ -30,3 +30,4 @@ let str2 = "PRO-TIP #498: IT'S NICE TO SAY HELLO."
 
 console.log(day1(str1))
 console.log(day1(str2))
+console.log('')
