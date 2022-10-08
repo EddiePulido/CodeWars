@@ -21,3 +21,4 @@ function checkEquality(a1, a2){
 console.log(checkEquality(arr1, arr2))
 console.log(checkEquality(arr1, arr3))
 console.log(checkEquality(arr1, arr4))
+
