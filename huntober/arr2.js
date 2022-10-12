@@ -33,5 +33,5 @@ console.log(myArray) // ['xyz', 'abc', 1, 'Hey!', 2]
 
 // call move right function again, same arguments
 // Note that 2 is already as far right as it can go
-moveRight(myArray, 2)
+moveRight(myArray, 2) 
 console.log(myArray) // ['xyz', 'abc', 1, 'Hey!', 2] no change
