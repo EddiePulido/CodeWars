@@ -5,4 +5,4 @@ function duplicateEncode(word){
     return a}, {})
    
   return [...word].map(e => hash[e] === 1 ? '(' : ')').join('')
-}
+} 
