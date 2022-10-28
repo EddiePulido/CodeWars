@@ -5,5 +5,5 @@ const majorityElement = (nums) => {
       else if (ans == nums[i]) count++
       else count--      
   }
-  return result
+  return result 
 };
