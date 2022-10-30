@@ -29,7 +29,7 @@ var addTwoNumbers = function(l1, l2) {
   
   if(carry){
       const node = new ListNode(1)
-      dummy.next = node
+      dummy.next = node 
   }
   
   return dhead.next
