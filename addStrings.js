@@ -1,4 +1,4 @@
-unction sumStrings(a,b) { 
+function sumStrings(a,b) { 
   let result = ''
   
   while(a[0] === '0'){
