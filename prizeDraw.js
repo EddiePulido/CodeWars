@@ -1,21 +1,18 @@
 function rank(st, we, n) {
-  let arr = st.split(',')
   if(st.length === 0) return 'No participants'
-  if(n > arr.length) return "Not enough participants"
+  const arr = st.split(',')
   
-  let alpha = '.abcdefghijklmnopqrstuvwxyz'
-  
-  
-  let hash = {}
-  
-  arr.forEach((name, i) => {
-    let score = name.split('').reduce((a,c) => a + alpha.indexOf(c.toLowerCase()), name.length)
-    hash[name] = score * we[i]
-  })
+  const hash = arr.reduce((acc, name, i) => {
+    const score = name
+                    .toLowerCase()
+                    .split('')
+                    .reduce((a,c) => a + c.charCodeAt() - 96, name.length)
+    acc[name] = score * we[i]
+    return acc
+  }, {})
   
   arr.sort()
   arr.sort((a,b) => hash[b] - hash[a])
-
   
-  return arr[n-1]
+  return arr[n-1] || "Not enough participants"
 }
