@@ -13,16 +13,8 @@ function rank(st, we, n) {
     hash[name] = score * we[i]
   })
   
-  const alphaSort = (a,b) => {
-    if (a < b) {
-    return -1;
-    }
-    if (a > b) {
-      return 1;
-    }
-    return 0;
-  }
-  arr = arr.sort((a,b) => hash[a] === hash[b] ? alphaSort(a,b) : hash[b] - hash[a])
+  arr.sort()
+  arr.sort((a,b) => hash[b] - hash[a])
 
   
   return arr[n-1]
