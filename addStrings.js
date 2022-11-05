@@ -4,7 +4,7 @@ function sumStrings(a,b) {
   while(a[0] === '0'){
     a = a.replace('0','')
   }
-  
+   
   while(b[0] === '0'){
     b = b.replace('0', '')
   }
