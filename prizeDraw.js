@@ -11,8 +11,7 @@ function rank(st, we, n) {
     return acc
   }, {})
   
-  arr.sort()
-  arr.sort((a,b) => hash[b] - hash[a])
+  arr.sort().sort((a,b) => hash[b] - hash[a])
   
   return arr[n-1] || "Not enough participants"
 }
