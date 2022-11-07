@@ -1,0 +1,1 @@
+const findDeletedNumber = (arr, mixArr) => arr.reduce((a,c) => a + c, 0) - mixArr.reduce((a,c) => a + c, 0)
