@@ -15,6 +15,6 @@ var SequenceSum = (function() {
     return end
   };
 
-  return SequenceSum;
+  return SequenceSum; 
 
 })(); 
