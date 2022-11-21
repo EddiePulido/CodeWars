@@ -42,7 +42,7 @@ DinnerPlates.prototype.pop = function() {
 */
 DinnerPlates.prototype.popAtStack = function(index) {
   return this.stacks[index].length ? this.stacks[index].pop(): -1
-};
+}; 
 
 /** 
 * Your DinnerPlates object will be instantiated and called as such:
