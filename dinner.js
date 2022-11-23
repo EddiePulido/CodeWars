@@ -32,8 +32,14 @@ DinnerPlates.prototype.push = function(val) {
 * @return {number}
 */
 DinnerPlates.prototype.pop = function() {
-  if(this.stacks.length === 0) return -1
-  return this.stacks[this.stacks.length-1].pop()
+
+  let s = this.stacks
+  for(let i = s.length - 1; i >= 0; i--){
+      if(s[i].length)
+          return this.stacks[i].pop()
+  }
+
+  return -1
 };
 
 /** 
@@ -41,8 +47,8 @@ DinnerPlates.prototype.pop = function() {
 * @return {number}
 */
 DinnerPlates.prototype.popAtStack = function(index) {
-  return this.stacks[index].length ? this.stacks[index].pop(): -1
-};  
+  return this.stacks[index]?.length ? this.stacks[index].pop(): -1
+};
 
 /** 
 * Your DinnerPlates object will be instantiated and called as such:
