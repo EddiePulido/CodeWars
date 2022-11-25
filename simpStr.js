@@ -6,7 +6,7 @@ function solve(s){
       a[0]++
     else if(isChar && c === c.toLowerCase()) 
       a[1]++
-    else if(Number.isInteger(+c)) 
+    else if(Number.isInteger(+c))  
       a[2]++
     else 
       a[3]++
