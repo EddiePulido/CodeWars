@@ -12,4 +12,4 @@ function solve(s){
       a[3]++
     return a
   }, [0,0,0,0]) 
-}
+} 
