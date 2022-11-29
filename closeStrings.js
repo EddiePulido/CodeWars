@@ -9,5 +9,5 @@ var closeStrings = function(word1, word2) {
   let h1Vals = Object.values(hash1).sort().join('')
   let h2Vals = Object.values(hash2).sort().join('')
 
-  return h1Keys === h2Keys && h1Vals === h2Vals
+  return h1Keys === h2Keys && h1Vals === h2Vals 
 };
