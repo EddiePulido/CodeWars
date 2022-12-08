@@ -11,6 +11,6 @@ function tripleX(str){
     }
   }
   
-  return false
+  return false  
 }
 
