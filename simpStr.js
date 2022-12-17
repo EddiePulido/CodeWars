@@ -11,5 +11,5 @@ function solve(s){
     else 
       a[3]++
     return a
-  }, [0,0,0,0])   
+  }, [0,0,0,0])    
 } 
