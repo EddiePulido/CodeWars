@@ -9,5 +9,5 @@ var findLucky = function(arr) {
       }
   }
 
-  return largest 
+  return largest  
 };
