@@ -19,4 +19,4 @@ function meeting(x, need){
   return sum < need ? 'Not enough!' : result
   
   
-}
+} 
