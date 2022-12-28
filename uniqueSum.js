@@ -1,0 +1,1 @@
+const uniqueSum = lst => lst.length ? [...new Set(lst)].reduce((a,c) => a + c) : null
