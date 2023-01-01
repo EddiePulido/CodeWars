@@ -8,4 +8,4 @@ else if(r+2<=N)r+=2
 else r+=1
 c++
 }
-print(c)
+print(c) 
