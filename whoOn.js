@@ -13,3 +13,12 @@ const whosOnline = (friends) => {
   
   return result
 }
+
+const whosOnline = (friends) => {
+  return friends.reduce((a,c) => {
+    let status = c.status
+    if(c.lastActivity > 10 && status == 'online') status = 'away'
+    a[status] ? a[status].push(c.username) : a[status] = [c.username]
+    return a
+  },{})
+}
