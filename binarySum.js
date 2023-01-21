@@ -1,0 +1,1 @@
+print([...(+readline()).toString(2)].reduce((a,c)=>a+ +c,0))
