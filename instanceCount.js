@@ -3,6 +3,6 @@ function solution(f, s){
   
   for(let i = 0; i < f.length; i++){
     if(s === f.slice(i,i+s.length)) count++
-  }
+  } 
   return count
 } 
