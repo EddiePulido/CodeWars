@@ -5,4 +5,4 @@ function solution(f, s){
     if(s === f.slice(i,i+s.length)) count++
   }
   return count
-}
+} 
