@@ -1,0 +1,1 @@
+const filterEvenLengthWords = w => w.filter(e => !(e.length % 2))
