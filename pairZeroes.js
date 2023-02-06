@@ -10,3 +10,5 @@ function pairZeros(arr) {
     return result
   })
 }
+
+const pairZeros = (a,z=0) => a.filter(n => n != 0 || !(z++ % 2))
