@@ -1,0 +1,1 @@
+print((readline().split('R').length-1)*4)
