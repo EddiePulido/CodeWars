@@ -1,0 +1,1 @@
+print([...readline()].reduce((a,c)=>+c==0?a:a+(--c),''))
