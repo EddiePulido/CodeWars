@@ -1,0 +1,6 @@
+
+const input = readline()
+
+let newStr = input.replace(/\s{2,}/g, ' ').trim().split(' ')
+
+console.log(newStr.map(e => e.length).join(' '));
