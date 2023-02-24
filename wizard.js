@@ -19,6 +19,6 @@ for (let i = 0; i < N; i++) {
         }
     })
 
-    Object.values(map).every(e => e <= 0) ? print('Is a wizard') : print('Not a wizard')  
+    Object.values(map).every(e => e <= 0) ? print('Is a wizard') : print('Not a wizard')   
 }
 
