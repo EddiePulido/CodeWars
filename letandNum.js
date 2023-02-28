@@ -6,4 +6,4 @@ let nums = [...s].filter(e => d.includes(e)).reduce((a,c) => a + +c, 0)
 let le = [...s].filter(e => !d.includes(e)).join('')
 
 print(le)
-print(nums)
+print(nums) 
