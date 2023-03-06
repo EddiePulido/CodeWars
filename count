@@ -1,0 +1,5 @@
+const s = readline()
+
+let v = 'aeiouyAEIOUY'
+
+print([...s].reduce((a,c) => v.includes(c) ? a : a + c.charCodeAt(), 0))
