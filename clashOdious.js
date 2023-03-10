@@ -1,0 +1,1 @@
+print(!!(((+readline()).toString(2)+'').split('').filter(e=>e==1).length%2))
