@@ -1,0 +1,20 @@
+const n = readline();
+const t = readline();
+
+let str = ''
+
+for(let i = 0; i < t.length; i++){
+    if(t[i] !== n){
+        str += t[i]
+    }else{
+        let count = 1
+        let j = i+1
+        while(t[j] === n){
+            count++
+            j++
+        }
+        str+= count
+        i = j-1
+    }
+}
+console.log(str);
