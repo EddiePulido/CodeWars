@@ -1,0 +1,1 @@
+const explode = x => x.every(e=>isNaN(e)) ? 'Void!' : Array(x.reduce((a,c)=>a + (Number(c) || 0), 0)).fill(x)
