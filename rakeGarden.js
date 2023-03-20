@@ -1,0 +1,1 @@
+const rakeGarden= g => g.split(' ').map(e => e !== 'rock' ? 'gravel' : e).join(' ')
