@@ -6,3 +6,9 @@ function deepCount(arr) {
   
   return count
 }
+
+function deepCount(arr) {
+  if (!Array.isArray(arr)) return 0
+    
+  return arr.reduce((a,c) => a + deepCount(c) + 1, 0)
+}
