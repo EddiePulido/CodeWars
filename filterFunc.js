@@ -5,3 +5,7 @@ Array.prototype.filter = function (func) {
   
   return arr
 }
+
+Array.prototype.filter = function (func) {
+  return this.reduce((a,c) => func(c) ? (a.push(c),a) : a,[])
+}
