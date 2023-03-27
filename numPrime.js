@@ -5,4 +5,5 @@ function isPrime(num) {
     if(!(num % i)) return false
   }
   
-  retu
+  return true
+}
