@@ -1,0 +1,1 @@
+const getStatus = busy => ({ status: busy ? "busy" : "available" })
