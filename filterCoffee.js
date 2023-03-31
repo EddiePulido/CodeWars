@@ -1,0 +1,1 @@
+const search = (b,p) => p.filter(e => e <= b).sort((a,b) => a - b).join(',')
