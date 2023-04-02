@@ -8,3 +8,7 @@ function beggars(values, n){
     return a
   }, Array(n).fill(0))
 }
+
+function beggars(values, n){
+  return values.reduce((a,c,i) => (a[i%n] += c, a), n ? Array(n).fill(0) : [])
+}
