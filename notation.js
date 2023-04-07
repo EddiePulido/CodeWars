@@ -1,0 +1,1 @@
+print([...readline()].reduce((a,c)=>(c=='.'? a.s+=String.fromCharCode(a.n):c=='-'?--a.n:c=='+'?++a.n:a,a),{s:'',n:0}).s)
