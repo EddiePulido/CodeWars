@@ -5,3 +5,5 @@ function pyramid(n) {
     
   return arr
 }
+
+const pyramid = n => [...Array(n)].map((e,i) => [...Array(i+1).fill(1)])
