@@ -5,6 +5,6 @@ function twosDifference(input){
   for(n of set){
     if(set.has(n+2)) arr.push([n,n+2])
   }
-  
-  return arr
+
+  return arr 
 }
