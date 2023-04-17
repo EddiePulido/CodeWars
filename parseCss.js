@@ -1,5 +1,5 @@
 function parseHTMLColor(color) {
-  if(PRESET_COLORS[color.toLowerCase()]) color = PRESET_COLORS[color.toLowerCase()]
+  color = PRESET_COLORS[color.toLowerCase()] || color
 
   if(color.length === 4){
     const [other,r,g,b] = [...color]
