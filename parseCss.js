@@ -3,14 +3,7 @@ function parseHTMLColor(color) {
   
   const convert = n => parseInt(n.length === 1 ? n+n : n, 16)
 
-  if(color.length === 3){
-    const [r,g,b] = [...color]
-    return { r: convert(r), g: convert(g), b: convert(b) }
-  }
-  
-  const r = convert(color.slice(0,2))
-  const g = convert(color.slice(2,4))
-  const b = convert(color.slice(4))
-  
-  return { r:r, g:g, b:b }
+  const [r, g, b] = color.length === 3 ? [...color].map(convert) : [color.slice(0, 2), color.slice(2, 4), color.slice(4)].map(convert)
+
+  return { r, g, b }
 }
