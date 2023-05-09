@@ -1,0 +1,1 @@
+print(readline().split(' ').reduce((a,c)=>a*[...c].reduce((a,c)=>a+ +c,0),1))
