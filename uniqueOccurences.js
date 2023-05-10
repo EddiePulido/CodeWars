@@ -1,13 +1,7 @@
-var uniqueOccurrences = function(arr) {
+const uniqueOccurrences = arr => {
   const count = arr.reduce((a,c) => (a[c] = ++a[c] || 1, a), {})
 
-  const occur = {}
+  const vals = Object.values(count)
 
-  for(key in count){
-      if(occur[count[key]]) return false
-      
-      occur[count[key]] = true
-  }
-
-  return true
-};
+  return vals.length === (new Set(vals)).size
+}
