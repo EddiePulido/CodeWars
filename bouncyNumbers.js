@@ -1,0 +1,11 @@
+r=readline
+n=+r()
+f=m=>{
+if(+m<0){print(m)
+return}
+a=[...m]
+b=a.slice().sort((x,y)=>x-y).join()
+c=a.slice().sort((x,y)=>y-x).join()
+a=a.join()
+print(a!=b&&a!=c)}
+for(i=0;i<n;i++)f(r())
