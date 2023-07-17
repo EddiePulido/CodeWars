@@ -11,3 +11,30 @@ const pathFinder = (root, target) => {
   
   return null
 };
+
+const pathFinder = (root, target) => {
+  const result = pathFinderHelper(root, target)
+  return result?.reverse() || null
+}
+
+const pathFinderHelper = (root, target) => {
+  if(!root) return null
+  
+  if(root.val === target)  return [ root.val ]
+  
+  const left = pathFinderHelper(root.left, target)
+  
+  
+  if(left){
+    left.push(root.val)
+    return left
+  } 
+  
+  const right = pathFinderHelper(root.right, target)
+  if(right) {
+    right.push(root.val)
+    return right
+  }
+  
+  return null
+};
