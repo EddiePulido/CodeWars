@@ -3,4 +3,4 @@ function findOutlier(ints){
   if(evens.length === 1) return evens.pop()
   
   return ints.find(e => e % 2)
-}
+} 
