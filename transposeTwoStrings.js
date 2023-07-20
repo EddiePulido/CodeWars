@@ -7,4 +7,4 @@ const transposeTwoStrings = arr => {
   }
   
   return result.join('\n')
-}
+} 
