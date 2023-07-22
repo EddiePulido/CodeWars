@@ -6,4 +6,4 @@ const leafList = (root, leafs = []) => {
   leafList(root.right, leafs)
   
   return leafs
-};
+}; 
