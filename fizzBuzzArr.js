@@ -7,6 +7,6 @@ function solution(number){
     else if(i % 3 === 0) result[0]++
     else if(i % 5 === 0) result[1]++
   }
-  
+   
   return result
 } 
