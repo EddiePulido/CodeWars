@@ -11,7 +11,7 @@ const undirectedPath = (edges, nodeA, nodeB) => {
 
 const hasPath = (graph, src, dst, visited) => {
   if(src === dst) return true
-  visited.add(src)
+  visited.add(src) 
   
   for(node of graph[src]){
     if(!visited.has(node) && hasPath(graph, node, dst, visited)) return true
