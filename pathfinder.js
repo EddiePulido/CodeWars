@@ -38,3 +38,21 @@ const pathFinderHelper = (root, target) => {
   
   return null
 };
+
+const pathFinder = (root, target) => {
+  const stack = root ? [ [root, [root.val] ]] : []
+  
+  while(stack.length){
+    const [curr, route] = stack.pop()
+    
+    if(curr.val === target){
+      return route
+    }
+    
+    if(curr.right) stack.push([curr.right, route.concat(curr.right.val)])
+    if(curr.left) stack.push([curr.left, route.concat(curr.left.val)])
+    
+  }
+  
+  return null
+};
