@@ -7,5 +7,5 @@ public int array667(int[] nums) {
     }
   }
   
-  return count;
+  return count; 
 }
