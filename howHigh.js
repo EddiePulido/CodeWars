@@ -6,4 +6,4 @@ const howHigh = (node, height = 0) => {
 
 module.exports = {
   howHigh,
-};
+}; 
