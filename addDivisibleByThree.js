@@ -1,0 +1,1 @@
+print([...readline()].reduce((a,c,i)=>!(i%3)?a*c:a,1))
