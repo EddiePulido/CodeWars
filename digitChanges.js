@@ -1,0 +1,1 @@
+print([...readline()].reduce((a,c,i,b)=>i!=0&&b[i-1]!=c?++a:a,0))
