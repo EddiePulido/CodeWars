@@ -1,0 +1,1 @@
+print(readline().match(/[-+]?\d+/g).reduce((a,c)=>a+ +c,0))
