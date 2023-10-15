@@ -56,3 +56,20 @@ const pathFinder = (root, target) => {
   
   return null
 };
+
+const pathFinder = (root, target) => {
+  const stack = root ? [ [root, [root.val]]] : []
+  
+  while(stack.length){
+    const [curr, path] = stack.pop()
+    
+    // const pathCopy = path.slice()
+    
+    if(curr.val === target) return path
+    
+    if(curr.left) stack.push([curr.left, [...path, curr.left.val]])
+    if(curr.right) stack.push([curr.right, [...path, curr.right.val]])
+  }
+  
+  return null
+};
