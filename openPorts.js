@@ -1,0 +1,1 @@
+print(readline().split(',').reduce((a,c)=>a+ +(c.endsWith('OT')), 0))
