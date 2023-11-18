@@ -7,3 +7,19 @@ const hasPath = (graph, src, dst) => {
   
       return false
 }
+
+const hasPath = (graph, src, dst) => {
+  const queue = [ src ]
+  
+  while(queue.length){
+    const curr = queue.shift()
+    
+    if(curr === dst) return true
+    
+    for(neighbor of graph[curr]){
+      queue.push(neighbor)
+    }
+  }
+  
+  return false
+}
