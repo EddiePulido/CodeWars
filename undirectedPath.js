@@ -19,3 +19,31 @@ const hasPath = (graph, src, dst, visited) => {
   
   return false
 }
+
+const undirectedPath = (edges, nodeA, nodeB) => {
+  const visited = new Set()
+  const graph = {}
+  
+  for([a,b] of edges){
+    if(!graph.hasOwnProperty(a)) graph[a] = []
+    if(!graph.hasOwnProperty(b)) graph[b] = []
+    
+    graph[a].push(b)
+    graph[b].push(a)
+  }
+  
+  const stack = [ nodeA ]
+  
+  while(stack.length){
+    const curr = stack.pop()
+    
+    if(curr === nodeB) return true
+    visited.add(curr)
+    
+    for(neighbor of graph[curr]){
+      if(!visited.has(neighbor)) stack.push(neighbor)
+    }
+  }
+  
+  return false
+}
