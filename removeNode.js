@@ -5,7 +5,7 @@ const removeNode = (head, target, curr = head, prev = null) => {
       return head
     }
     
-    return head.next
+    return head.next 
   }
   
   return removeNode(head, target, curr.next, curr)
