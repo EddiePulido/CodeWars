@@ -1,0 +1,1 @@
+print([...readline()].filter((e,i,a)=>e!=a[i-1]).join``)
