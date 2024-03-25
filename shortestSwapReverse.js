@@ -1,0 +1,1 @@
+print([...readline()].map(e=>/[a-z]/.test(e)?e.toUpperCase():e.toLowerCase()).reverse().join(''))
