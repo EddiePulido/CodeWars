@@ -1,0 +1,1 @@
+const scrabbleScore = s => [...s.toUpperCase()].reduce((a,c) => a + ($dict[c] || 0),0)
