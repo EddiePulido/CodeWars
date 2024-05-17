@@ -27,3 +27,6 @@ function buildSentence(word1, word2, word3) {
   const str = [word1, word2, word3].join(' ')
 	console.log(str[0].toUpperCase() + str.slice(1).toLowerCase() + '.')
 }
+function lastLetter(word) {
+	console.log(word.slice(-1))
+}
