@@ -30,3 +30,36 @@ function buildSentence(word1, word2, word3) {
 function lastLetter(word) {
 	console.log(word.slice(-1))
 }
+
+function buildGreeting(time, name) {
+	if(time >= 0 && time <= 11){
+    console.log('Good Morning, ' + name)
+  }else if(time >= 12 && time <= 16){
+    console.log('Good Afternoon, ' + name)
+  }else if(time >= 17 && time <= 24){
+    console.log('Good Evening, ' + name)
+  }else{
+    console.log(`That's not a real time, ${name}. Maybe you need some sleep!`)
+  }
+
+}
+
+
+function letterExists(word, letter) {
+	console.log(word.indexOf(letter) !== -1)
+}
+
+function isPrime(number) {
+  let bool = true
+  if(number < 2) bool = false
+  
+  for(let i = 2; i <= Math.sqrt(number); i++){
+    if(number % i === 0){
+      bool = false
+      break
+    }
+  }
+  
+	console.log(bool)
+
+}
