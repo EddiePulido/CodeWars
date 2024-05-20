@@ -39,3 +39,16 @@ function palindrome(str) {
 // console.log(palindrome("Anne, I vote more cars race Rome-to-Vienna")); //-> true
 // console.log(palindrome("llama mall")); //-> true
 // console.log(palindrome("jmoney")); //-> false
+
+//Challenge 5
+function pathFinder(obj, arr) {
+	const obj2 = obj[arr[0]]
+  
+  if(arr.length === 1) return obj2
+  
+  return pathFinder(obj2, arr.slice(1))
+}
+
+// const obj = { first: { second: { third: "finish" } }, second: { third: "wrong" } };
+// const arr = ["first", "second", "third"];
+// console.log(pathFinder(obj, arr));   //-> "finish"
