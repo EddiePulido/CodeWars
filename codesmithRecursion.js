@@ -72,3 +72,13 @@ function flattenRecursively(arr) {
 // console.log(flattenRecursively([1, [2, 3, [4]]])); //-> [1, 2, 3, 4]
 // console.log(flattenRecursively([1, {}, [3, [[4]]]])); //-> [1, {}, 3, 4]
 
+//Challenge 7
+function findInOrderedSet(arr, target) {
+	if(!arr.length || arr[0] > target) return false
+  
+  return arr[0] == target || findInOrderedSet(arr.slice(1), target)
+}
+
+// const nums = [1, 4, 6, 7, 9, 17, 45];
+// console.log(findInOrderedSet(nums, 4));  //-> true
+// console.log(findInOrderedSet(nums, 2));  //-> false
