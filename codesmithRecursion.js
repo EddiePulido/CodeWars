@@ -52,3 +52,23 @@ function pathFinder(obj, arr) {
 // const obj = { first: { second: { third: "finish" } }, second: { third: "wrong" } };
 // const arr = ["first", "second", "third"];
 // console.log(pathFinder(obj, arr));   //-> "finish"
+
+//Challenge 6
+function flattenRecursively(arr) {
+  var flatArray = [];
+
+  arr.forEach(function(item) {
+      if (Array.isArray(item)) {
+          flatArray = flatArray.concat(flattenRecursively(item));
+      } else {
+          flatArray.push(item);
+      }
+  });
+
+  return flatArray;
+}
+
+
+// console.log(flattenRecursively([1, [2, 3, [4]]])); //-> [1, 2, 3, 4]
+// console.log(flattenRecursively([1, {}, [3, [[4]]]])); //-> [1, {}, 3, 4]
+
