@@ -137,4 +137,27 @@ function arrayBuilder(count) {
   
   return arr
 }
+function objectBuilder(count) {
+	const obj = {}
+  
+  for(let i = 0; i <= count; i++){
+    obj[i] = i * 5
+  }
+
+  return obj
+}
+
+function secretCipher(sentence, cipher){
+	return [...sentence].map(e => cipher[e] || e).join('')
+}
+
+function passingStudents(students) {
+  
+  
+  return students.filter(student => {
+    const avg = student.grades.reduce((a,c) => a + c.score, 0) / student.grades.length
+    
+    return avg >= 70
+  }).map(student => student.name)
+}
 
