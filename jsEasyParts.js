@@ -104,3 +104,37 @@ function disemvowel(str) {
   
   return [...str].filter(e => !v.includes(e.toLowerCase())).join('')
 }
+
+function highestScore(students) {
+	let max = -Infinity
+  let result = ''
+  
+  for(const person of students){
+    if(person.score > max){
+      max = person.score
+      result = person.name.split(' ').map(e => e[0]).join('')+person.id
+    }
+  }
+  
+  return result
+}
+
+function leastCommonMultiple(num1, num2) {
+  
+  let i = Math.max(num1, num2) + 1
+	
+  while(i % num1 || i % num2) i++
+  
+  return i
+}
+
+function arrayBuilder(count) {
+	const arr = []
+  
+  for(const k in count){
+    arr.push(...Array.from({length: count[k]}, (v,i) => k))
+  }
+  
+  return arr
+}
+
