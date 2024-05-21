@@ -98,3 +98,9 @@ function longestWord(sentence) {
 
   return sentence.split(' ').reverse().find(e => e.length === len)
 }
+
+function disemvowel(str) {
+	const v = 'aeiou'
+  
+  return [...str].filter(e => !v.includes(e.toLowerCase())).join('')
+}
