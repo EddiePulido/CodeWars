@@ -63,3 +63,38 @@ function isPrime(number) {
 	console.log(bool)
 
 }
+
+const indexOf = (str, c) => {
+	for(let i = 0; i < str.length; i++){
+    if(str.slice(i,i+c.length) === c) return i
+  }
+  
+  return -1
+}
+
+function range(start, end) {
+	console.log(Array.from({length: end-start+1}, (_,i) => i + start).join(', '))
+}
+
+function myIndexOf(array, ele){
+
+	
+  for(let i = 0; i < array.length; i++){
+    if(array[i] === ele){
+    	console.log(i)
+      return
+    }
+  }
+
+  console.log(-1)
+}
+
+function unique(arr) {
+	console.log([...new Set(arr)])
+}
+
+function longestWord(sentence) {
+	const len = Math.max(...sentence.split(' ').map(e=>e.length))
+
+  return sentence.split(' ').reverse().find(e => e.length === len)
+}
