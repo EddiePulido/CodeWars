@@ -1,0 +1,1 @@
+r=readline();v={I:1,IV:4,V:5,IX:9,X:10,XL:40,L:50,XC:90,C:100,CD:400,D:500,CM:900,M:1000};n=0;for(i=0;i<r.length;i++){c=v[r[i]];next=v[r[i+1]];if(next&&c<next){n+=next-c;i++}else{n+=c}}print(n)
