@@ -1,0 +1,1 @@
+s.map(e => e.slice(0, n)).join('').toUpperCase().replace(/_/g, ' ')
