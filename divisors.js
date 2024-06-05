@@ -7,3 +7,19 @@ function divisors(integer) {
   
   return !arr.length ? `${integer} is prime` : arr
 };
+
+let n = parseInt(readline());
+
+let arr = []
+
+for(let i = 2; i <= n; i++){
+
+    if(n % i === 0){
+        arr.push(i)
+        n /= i
+        i--
+        
+    }
+}
+
+console.log(arr.join(' ') || 1)
