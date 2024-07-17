@@ -26,6 +26,8 @@ function Queue () {
       
       return node.val
     } 
+
+    return null
   }
 
 }
