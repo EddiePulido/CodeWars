@@ -2,6 +2,7 @@ r = readline
 n = +r()
 for (i = 0; i < n; i++) {
 	a = +r()
+
 	print(
 		a > 25
 			? 'Too old'
