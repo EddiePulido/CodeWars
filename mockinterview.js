@@ -3,18 +3,14 @@
 
 // You can assume that the input string is non-empty.
 
-
-
 console.log(mostFrequentChar('bookeeper')) // -> 'e'
 console.log(mostFrequentChar('david')) // -> 'd'
-console.log(mostFrequentChar("riverbed")) // -> 'r'
+console.log(mostFrequentChar('riverbed')) // -> 'r'
 
 // *************************************************************************
 //Create a function functionValidator that accepts an array of functions and two different values (let's call them input and output). This function should return a new array containing *only* the functions from the original array that, when invoked with input, return the value output. Use reduce!
 
-const functionValidator = (funcArr, input, output) => {
-
-}
+const functionValidator = (funcArr, input, output) => {}
 
 // const addFive = num => num + 5;
 // const multiplyByTwo = num => num * 2;
@@ -25,13 +21,10 @@ const functionValidator = (funcArr, input, output) => {
 // *************************************************************************
 // Write a function after that takes the number of times the callback needs to be called before being executed as the first parameter and the callback as the second parameter.
 
+const after = (count, func) => {}
 
-const after = (count, func) => {
-
-};
-
-const called = () => console.log('hello');
-const afterCalled = after(3, called);
+const called = () => console.log('hello')
+const afterCalled = after(3, called)
 
 // afterCalled(); // -> nothing is printed
 // afterCalled(); // -> nothing is printed
@@ -52,28 +45,22 @@ const afterCalled = after(3, called);
 //console.log(makePassword("Give me liberty or give me death")) // -> "Gml0gmd"
 //console.log(makePassword("Keep Calm and Carry On")) // "KCaC0"Delete Duplicates
 
-Write a function that takes in an array and returns a new array with duplicates removed
+// Write a function that takes in an array and returns a new array with duplicates removed
 
-Ex: deleteDups(['a','a','a']) -> ['a']
+// Ex: deleteDups(['a','a','a']) -> ['a']
 
-Ex: deleteDups(['a', 'b', 'c', 'd', 'a', 'b', 'c', 'd']), ' -> ['a', 'b', 'c', 'd']
+// Ex: deleteDups(['a', 'b', 'c', 'd', 'a', 'b', 'c', 'd']), ' -> ['a', 'b', 'c', 'd']
 // *************************************************************************
 //Modify the function so that it returns the length of an array recursively, without using the .length property. Use recursion!
 
-function getLength(array, i = 0) {
-
-}
+function getLength(array, i = 0) {}
 
 // To check if you've completed the challenge, uncomment these console.logs!
 // console.log(getLength([1])); // -> 1
 // console.log(getLength([1, 2])); // -> 2
 // console.log(getLength([1, 2, 3, 4, 5])); // -> 5
 
-
-
-
 // *************************************************************************
-
 
 // Delete Duplicates
 
@@ -83,22 +70,20 @@ function getLength(array, i = 0) {
 
 // Ex: deleteDups(['a', 'b', 'c', 'd', 'a', 'b', 'c', 'd']), ' -> ['a', 'b', 'c', 'd']
 
-
-function deleteDups(arr) {
-
-}
+function deleteDups(arr) {}
 
 // Extension: solve in 0(n) time
 
 function dupsTests() {
-  console.log(deleteDups(['a', 'a', 'a', 'a', 'a']), ' -> [a]');
-  console.log(deleteDups(['a', 'b', 'c', 'd']), ' -> [a, b, c, d]');
-  console.log(deleteDups(['a', 'b', 'c', 'd', 'a', 'b', 'c', 'd']), ' -> [a, b, c, d]');
+	console.log(deleteDups(['a', 'a', 'a', 'a', 'a']), ' -> [a]')
+	console.log(deleteDups(['a', 'b', 'c', 'd']), ' -> [a, b, c, d]')
+	console.log(
+		deleteDups(['a', 'b', 'c', 'd', 'a', 'b', 'c', 'd']),
+		' -> [a, b, c, d]'
+	)
 }
 
 // dupsTests() // Uncomment to check code!
-
-
 
 // Write a function createCounter. It should accept an initial integer init. It should return an object with three functions.
 
@@ -111,4 +96,27 @@ function dupsTests() {
 // Input: init = 5, calls = ["increment","reset","decrement"]
 // Output: [6,5,4]
 
+// *************************************************************************
 
+// You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+function getMiddle(str) {}
+
+// console.log(getMiddle("test")) // -> "es"
+
+// console.log(getMiddle("testing")) // -> "t"
+
+// console.log(getMiddle("middle")) // -> "dd"
+
+// console.log(getMiddle("A")) // -> "A"
+
+// Count the number of Duplicates
+// Write a function that will return the count of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string. The input string can be assumed to contain only alphabets (both uppercase and lowercase) and numeric digits.
+
+// Example
+// console.log("abcde") // -> 0 # no characters repeats more than once
+// console.log("aabbcde") // -> 2 # 'a' and 'b'
+// console.log("aabBcde") // -> 2 # 'a' occurs twice and 'b' twice (`b` and `B`)
+// console.log("indivisibility") // -> 1 # 'i' occurs six times
+// console.log("Indivisibilities") // -> 2 # 'i' occurs seven times and 's' occurs twice
+// console.log("aA11") // -> 2 # 'a' and '1'
+// console.log("ABBA") // -> 2 # 'A' and 'B' each occur twice
