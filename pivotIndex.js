@@ -9,7 +9,7 @@ const findPivotIndex = arr => {
       return i
     }
     
-    sumLeft += arr[i]
+    sumLeft += arr[i] 
   }
   
   return null
