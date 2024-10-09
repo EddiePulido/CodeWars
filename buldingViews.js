@@ -1,0 +1,9 @@
+r=readline
+n=+r()
+a=[]
+m=0
+c=0
+while(n--){x=+r()
+if(x>m){m=x
+c++}}
+print(c)
