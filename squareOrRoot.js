@@ -6,5 +6,5 @@ const m = {
     sr: (n ** .5).toFixed(1)
 }
 
-console.log(m[line]);
+console.log(m[line]); 
  
