@@ -7,4 +7,4 @@ const m = {
 }
 
 console.log(m[line]); 
- 
+  
