@@ -43,7 +43,9 @@ const afterCalled = after(3, called)
 // "Keep Calm and Carry On"            --> "KCaC0"
 
 //console.log(makePassword("Give me liberty or give me death")) // -> "Gml0gmd"
-//console.log(makePassword("Keep Calm and Carry On")) // "KCaC0"Delete Duplicates
+//console.log(makePassword("Keep Calm and Carry On")) // "KCaC0"
+
+// Delete Duplicates
 
 // Write a function that takes in an array and returns a new array with duplicates removed
 
@@ -53,7 +55,9 @@ const afterCalled = after(3, called)
 // *************************************************************************
 //Modify the function so that it returns the length of an array recursively, without using the .length property. Use recursion!
 
-function getLength(array, i = 0) {}
+function getLength(arr) {
+  
+}
 
 // To check if you've completed the challenge, uncomment these console.logs!
 // console.log(getLength([1])); // -> 1
