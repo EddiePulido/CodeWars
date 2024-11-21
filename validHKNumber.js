@@ -11,4 +11,4 @@ const hasValidHKPhoneNumber = num => {
   const filter = [...num].map((e => n.includes(e) ? '&' : e )).join('')
   
   return filter.includes('&&&& &&&&')
-}
+} 
