@@ -14,7 +14,7 @@ let bool = true
 
 for(const c of T){
     if(open.includes(c)){
-        stack.push(c)
+        stack.push(c) 
     } 
 
     if(close.includes(c)){
